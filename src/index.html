@@ -40,16 +40,16 @@
                 </button></label>
         </div>
         <nav class="container flex items-center justify-between px-2 mx-auto lg:p-5"><a href="index.html"><img
-                    src="./assets/images/logo/logo.webp" class="w-20 aspect-[1.42]" alt="logo"></a>
+                    src="./assets/images/logo/logo.webp" class="w-20 h-auto" alt="logo"></a>
             <ul class="items-center justify-center hidden space-x-20 text-lg font-bold lg:flex">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="#" class="nav-link">Service</a></li>
                 <li><a href="#" class="nav-link">Agents</a></li>
                 <li><a href="#" class="nav-link">Contact</a></li>
             </ul>
-            <div class="items-center justify-center hidden cursor-pointer space-x-11 lg:flex"><img src="./assets/icons/search.svg"
-                    class="icon search" alt="search"><a href="#"><img src="./assets/icons/user.svg" class="icon"
-                        alt="user"></a><button type="submit"
+            <div class="items-center justify-center hidden cursor-pointer space-x-11 lg:flex"><img
+                    src="./assets/icons/search.svg" class="icon search" alt="search"><a href="#"><img
+                        src="./assets/icons/user.svg" class="icon" alt="user"></a><button type="submit"
                     class="inline px-6 py-2 bg-[#161312] text-white rounded-md text-tiny">Sign up</button></div>
             <div class="absolute space-y-8 left-0 top-14 sm:text-lg hidden w-full bg-[#FEF7F2] px-3 h-[100vh] z-[1000]"
                 id="nav-menu">
@@ -59,16 +59,17 @@
                     <li><a href="#" class="nav-link">Agents</a></li>
                     <li><a href="#" class="nav-link">Contact</a></li>
                 </ul>
-                <div class="flex flex-col items-center justify-center space-y-5 cursor-pointer"><img src="./assets/icons/search.svg"
-                        class="icon search" alt="search"><a href="#"><img src="./assets/icons/user.svg" class="icon"
-                            alt="user"></a><button type="submit"
+                <div class="flex flex-col items-center justify-center space-y-5 cursor-pointer"><img
+                        src="./assets/icons/search.svg" class="icon search" alt="search"><a href="#"><img
+                            src="./assets/icons/user.svg" class="icon" alt="user"></a><button type="submit"
                         class="inline px-3 py-2 bg-[#161312] text-white rounded-md">Sign up</button></div>
-            </div><img src="./assets/icons/menu.svg" class="block cursor-pointer lg:hidden icon hamburger" width="80" height="80"
-                id="hamburger" alt="menu icon"><img src="./assets/icons/close.svg" class="hidden cursor-pointer icon" id="close"
-                alt="menu icon">
+            </div>
+            <img src="./assets/icons/menu.svg" class="block cursor-pointer lg:hidden icon hamburger" width="20"
+                height="20" id="hamburger" alt="menu icon">
+            <img src="./assets/icons/close.svg" class="hidden cursor-pointer icon" id="close" alt="menu icon">
         </nav>
         <div class="grid grid-cols-1 mx--auto sm:p-5 md:grid-cols-2">
-            <div class="order-2 w-full md:order-none h-80 md:h-full">
+            <div class="order-2 md:order-none">
                 <div class="mt-5 lg:ml-16 xxsm:mt-10 md:mt-0">
                     <h1
                         class="text-4xl xxsm:text-5xl text-[#533626] font-[900] xsm:text-6xl xsm:leading-[70px] text-center leading-[60px] px-2 md:text-5xl md:leading-[70px] md:text-start md:pt-10 md:px-0 lg:text-5xl lg:leading-[80px] xl:text-6xl 2xl:text-8xl 2xl:leading-[120px]">
@@ -84,61 +85,139 @@
                         type="submit" class="inline px-6 xxsm:px-12 py-3 bg-[#161312] text-white rounded-md">Sign
                         up</button></div>
             </div>
-            <div class="order-1 mt-5 md:order-none xxsm:px-4 lg:px-0 xxsm:mt-10"><img src="./assets/images/header/header.webp"
-                    class="w-full h-auto" style="width: 3000; height: 2120;" alt="header"></div>
+            <div class="order-1 mt-5 md:order-none xxsm:px-4 lg:px-0 xxsm:mt-10"><img
+                    src="./assets/images/header/header.webp" class="w-full h-auto" alt="header"></div>
         </div>
         <div class="bg-[#EBD4C8] flex items-center flex-col justify-between md:flex-row gap-8 md:gap-0 mt-8 p-5 md:mt-8 md:p-0 md:rounded-3xl md:max-w-7xl md:mx-auto md:py-20 md:justify-around z-[0]"
             id="ltp"><label
                 class="relative flex flex-col items-center justify-center w-[80%] md:w-[25%] px-3 py-3 bg-[#FAF5F1] border shadow-2xl min-w-sm md:flex-row rounded-lg focus-within:border-[#533626] z-[0]"
                 for="search-bar1"><input id="search-bar1" placeholder="Location" required
-                    class="flex-1 w-full px-1 py-2 bg-[#FAF5F1] rounded-md outline-none placeholder-[#533626] font-bold"><img
-                    src="./assets/icons/location.svg" alt="location" class="absolute w-6 right-5"></label><label
+                    class="flex-1 w-full px-1 py-2 bg-[#FAF5F1] rounded-md outline-none placeholder-[#533626] font-bold"><i
+                    class="fa-solid fa-location-dot absolute right-5 text-[#533626]"></i></label><label
                 class="relative flex flex-col items-center justify-center w-[80%] md:w-[25%] px-3 py-3 bg-[#FAF5F1] border shadow-2xl min-w-sm md:flex-row rounded-lg focus-within:border-[#533626] z-[0]"
                 for="search-bar2"><input id="search-bar2" placeholder="Type" required
-                    class="flex-1 w-full px-1 py-2 bg-[#FAF5F1] rounded-md outline-none placeholder-[#533626] font-bold"><img
-                    src="./assets/icons/home.svg" alt="home" class="absolute w-5 right-5"></label><label
+                    class="flex-1 w-full px-1 py-2 bg-[#FAF5F1] rounded-md outline-none placeholder-[#533626] font-bold"><i
+                    class="fa-solid fa-house absolute right-5 text-[#533626]"></i></label><label
                 class="relative flex flex-col items-center justify-center w-[80%] md:w-[25%] px-3 py-3 bg-[#FAF5F1] border shadow-2xl min-w-sm md:flex-row rounded-lg focus-within:border-[#533626] z-[0]"
                 for="search-bar3"><input id="search-bar3" placeholder="Price Range" required
-                    class="flex-1 w-full px-1 py-2 bg-[#FAF5F1] rounded-md outline-none placeholder-[#533626] font-bold"><img
-                    src="./assets/icons/dollar.svg" alt="dollar" class="absolute w-5 right-5"></label><button type="submit"
+                    class="flex-1 w-full px-1 py-2 bg-[#FAF5F1] rounded-md outline-none placeholder-[#533626] font-bold"><i
+                    class="fa-solid fa-dollar-sign absolute right-5 text-[#533626]"></i></label><button type="submit"
                 class="inline px-3 xxsm:px-12 py-4 bg-[#2B1B12] text-white rounded-md">Sign up</button></div>
     </header>
-    <section class="flex flex-col mx-auto mt-8 md:flex-row md:gap-10 md:px-2 md:mt-36 lg:justify-between 2xl:pl-28">
-        <div>
-            <img src="./assets/images/section/house.webp" alt="house" class="w-full h-full md:rounded-3xl" style="width: 3000; height: 2120;">
-        </div>
-        <div class="flex-col md:justify-start md:flex 2xl:pl-28 2xl:justify-center">
-            <div
-                class="font-[900] mt-5 text-[#2A1A11] xxsm:text-2xl text-center xsm:text-4xl xsm:mt-8 sm:text-5xl md:text-2xl md:mt-1 md:text-start lg:text-4xl xl:text-5xl 2xl:text-7xl">
-                <h1>We Help You To Find Your Dream Home</h1>
+    <main>
+        <section
+            class="mt-8 z-[10] flex flex-col mx-auto md:flex-row md:gap-10 md:px-2 md:mt-36 lg:justify-between 2xl:pl-28">
+            <div>
+                <img src="./assets/images/section/house.webp" alt="house" class="w-full h-full md:rounded-3xl"
+                    style="width: 3000; height: 2120;">
             </div>
-            <div
-                class="text-[#533626] mt-5 text-center font-[700] px-2 text-tiny xsm:text-base xsm:mt-6 sm:text-lg md:text-tiny md:px-0 md:text-start lg:mt-10 lg:text-lg xl:text-2xl 2xl:text-2xl 2xl:mt-16">
-                <p>
-                    From cozzy cottages to luxurious estates, our dedicated team guides you through
-                    every step of the journey, ensuring your dream home becomes a reality
-                </p>
+            <div class="md:justify-start md:flex flex-col 2xl:pl-28 2xl:justify-center">
+                <div
+                    class="font-[900] mt-5 text-[#2A1A11] xxsm:text-2xl text-center xsm:text-4xl xsm:mt-8 sm:text-5xl md:text-2xl md:mt-1 md:text-start lg:text-4xl xl:text-5xl 2xl:text-7xl">
+                    <h1>We Help You To Find Your Dream Home</h1>
+                </div>
+                <div
+                    class="text-[#533626] mt-5 text-center font-[700] px-2 text-tiny xsm:text-base xsm:mt-6 sm:text-lg md:text-tiny md:px-0 md:text-start lg:mt-10 lg:text-lg xl:text-2xl 2xl:text-2xl 2xl:mt-16">
+                    <p>
+                        From cozzy cottages to luxurious estates, our dedicated team guides you through
+                        every step of the journey, ensuring your dream home becomes a reality
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center mt-5 text-[#533626] gap-4 xsm:flex-row xsm:justify-between xsm:px-3 xsm:gap-0 sm:mt-8 sm:px-5 md:px-0 lg:mt-10 2xl:mt-16 2xl:justify-normal 2xl:space-x-32">
+                    <div class="text-center md:text-start">
+                        <h2 class="font-[800] text-3xl sm:text-4xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl">8K+
+                        </h2>
+                        <span class="font-[700] md:text-xs lg:text-base xl:text-lg 2xl:text-2xl">Houses Available</span>
+                    </div>
+                    <div class="text-center md:text-start">
+                        <h2 class="font-[800] text-3xl sm:text-4xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl">6K+
+                        </h2>
+                        <span class="font-[700] md:text-xs lg:text-base xl:text-lg 2xl:text-2xl">Houses Sold</span>
+                    </div>
+                    <div class="text-center md:text-start">
+                        <h2 class="font-[800] text-3xl sm:text-4xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl">2K+
+                        </h2>
+                        <span class="font-[700] md:text-xs lg:text-base xl:text-lg 2xl:text-2xl">Trusted Agents</span>
+                    </div>
+                </div>
             </div>
-            <div
-                class="flex flex-col items-center justify-center mt-5 text-[#533626] gap-4 xsm:flex-row xsm:justify-between xsm:px-3 xsm:gap-0 sm:mt-8 sm:px-5 md:px-0 lg:mt-10 2xl:mt-16 2xl:justify-normal 2xl:space-x-32">
-                <div class="text-center md:text-start">
-                    <h2 class="font-[800] text-3xl sm:text-4xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl">8K+
-                    </h2>
-                    <span class="font-[700] md:text-xs lg:text-base xl:text-lg 2xl:text-2xl">Houses Available</span>
+        </section>
+        <section>
+            <div class="container mx-auto">
+                <div class="mx-auto text-[#2A1A11] md:text-5xl md:mt-36 font-[900] container text-center">
+                    <h2>Why Choose Us</h2>
                 </div>
-                <div class="text-center md:text-start">
-                    <h2 class="font-[800] text-3xl sm:text-4xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl">6K+
-                    </h2>
-                    <span class="font-[700] md:text-xs lg:text-base xl:text-lg 2xl:text-2xl">Houses Sold</span>
+                <div class="mx-auto container text-center md:mt-5 font-[700] text-[#533626] md:text-2xl md:w-1/2">
+                    <p>
+                        Elevating Your Home Experience with Expertise, Integrity, and Unmatched Personalized Service
+                    </p>
                 </div>
-                <div class="text-center md:text-start">
-                    <h2 class="font-[800] text-3xl sm:text-4xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl">2K+
-                    </h2>
-                    <span class="font-[700] md:text-xs lg:text-base xl:text-lg 2xl:text-2xl">Trusted Agents</span>
+                <div class="md:mt-16 flex md:flex-row flex-col md:justify-between space-y-5 md:space-y-0">
+                    <div class="rounded-2xl bg-[#ddc7bb] max-w-[22rem] p-8"
+                        style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        <div class="w-[98px] h-24 bg-[#FAF5F1] rounded-lg flex items-center justify-center">
+                            <span class="icon-[gis--location-poi]"
+                                style="width: 3.50rem; height: 3.50rem; color: #2b1b12;"></span>
+                        </div>
+                        <div class="text-[#2A1A11] md:text-2xl md:mt-5 font-[900]">
+                            <h2>Expert Guidance</h2>
+                        </div>
+                        <div class="text-[#472d1f] md:text-xl md:mt-5 font-[700]">
+                            <p>
+                                Benefit from our team's seasoned expertise for a smooth buying experience
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-[#ddc7bb] max-w-[22rem] p-8"
+                        style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        <div class="w-[98px] h-24 bg-[#FAF5F1] rounded-lg flex items-center justify-center">
+                            <span class="icon-[mdi--user-edit]"
+                                style="width: 4.50rem; height: 4.50rem; color: #2b1b12;"></span>
+                        </div>
+                        <div class="text-[#2A1A11] md:text-2xl md:mt-5 font-[900]">
+                            <h2>Expert Guidance</h2>
+                        </div>
+                        <div class="text-[#472d1f] md:text-xl md:mt-5 font-[700]">
+                            <p>
+                                Benefit from our team's seasoned expertise for a smooth buying experience
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-[#ddc7bb] max-w-[22rem] p-8"
+                        style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        <div class="w-[98px] h-24 bg-[#FAF5F1] rounded-lg flex items-center justify-center">
+                            <span class="icon-[mdi--clipboard-text]"
+                                style="width: 4.20rem; height: 4.20rem; color: #2b1b12;"></span>
+                        </div>
+                        <div class="text-[#2A1A11] md:text-2xl md:mt-5 font-[900]">
+                            <h2>Expert Guidance</h2>
+                        </div>
+                        <div class="text-[#472d1f] md:text-xl md:mt-5 font-[700]">
+                            <p>
+                                Benefit from our team's seasoned expertise for a smooth buying experience
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-[#ddc7bb] max-w-[22rem] p-8"
+                        style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        <div class="w-[98px] h-24 bg-[#FAF5F1] rounded-lg flex items-center justify-center">
+                            <span class="icon-[fa6-solid--handshake-simple]"
+                                style="width: 4rem; height: 4rem; color: #2b1b12;"></span>
+                        </div>
+                        <div class="text-[#2A1A11] md:text-2xl md:mt-5 font-[900]">
+                            <h2>Expert Guidance</h2>
+                        </div>
+                        <div class="text-[#472d1f] md:text-xl md:mt-5 font-[700]">
+                            <p>
+                                Benefit from our team's seasoned expertise for a smooth buying experience
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <script type="module" src="./js/main.js" defer></script>
 </body>
 
